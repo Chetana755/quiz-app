@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Quiz - Capitals, Flags & Continents</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+
+    <!-- Category Selection -->
+    <div id="category-selection">
+      <h2>Choose Quiz Category</h2>
+      <button class="category-btn" data-category="capitals">Capitals</button>
+      <button class="category-btn" data-category="flags">Flags</button>
+      <button class="category-btn" data-category="continents">Continents</button>
+    </div>
+
+    <!-- Continent Selection -->
+    <div id="continent-selection" class="hidden">
+      <h2>Select Continent</h2>
+      <button class="continent-btn" data-continent="Africa">Africa</button>
+      <button class="continent-btn" data-continent="Americas">Americas</button>
+      <button class="continent-btn" data-continent="Asia">Asia</button>
+      <button class="continent-btn" data-continent="Europe">Europe</button>
+      <button class="continent-btn" data-continent="Oceania">Oceania</button>
+      <button class="continent-btn" data-continent="Antarctic">Antarctic</button>
+    </div>
+<!-- Difficulty Selection -->
+<div id="difficulty-selection" class="hidden">
+  <h2>Select Difficulty Level</h2>
+  <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+  <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+  <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+</div>
+
+    <!-- Quiz Section -->
+    <div id="quiz" class="hidden">
+      <h1>🌍 Quiz</h1>
+      <div id="question" class="question"></div>
+      <div id="options" class="options-container"></div>
+      <button id="next" class="hidden">Next ➡️</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden result-box"></div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
